@@ -1,0 +1,23 @@
+.animation-container {
+    display: flex;
+    justify-content: center;
+    transform: scaleY(2);
+    background: linear-gradient(45deg, red, yellow, green);
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 100px;
+    animation: _animate_ 2s infinite;
+}
+
+@keyframes _animate_ {
+    0% {
+        border-radius: 0px;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    100% {
+        border-radius: 0px;
+    }
+}
